@@ -1,0 +1,8 @@
+class Solution:
+    def MissingNumber(self,array,n):
+        sumOfArr=0
+        for i in range(len(array)):
+            sumOfArr+=array[i]
+            expArr=n*(n+1)/2
+            res=expArr-sumOfArr
+        return int(res)
